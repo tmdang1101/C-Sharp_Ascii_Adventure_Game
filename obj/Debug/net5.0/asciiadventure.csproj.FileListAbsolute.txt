@@ -1,0 +1,16 @@
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\asciiadventure.exe
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\asciiadventure.deps.json
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\asciiadventure.runtimeconfig.json
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\asciiadventure.runtimeconfig.dev.json
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\asciiadventure.dll
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\ref\asciiadventure.dll
+C:\Users\tuand\OneDrive\Documents\asciiadventure\bin\Debug\net5.0\asciiadventure.pdb
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.csproj.AssemblyReference.cache
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.AssemblyInfoInputs.cache
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.AssemblyInfo.cs
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.csproj.CoreCompileInputs.cache
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.dll
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\ref\asciiadventure.dll
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.pdb
+C:\Users\tuand\OneDrive\Documents\asciiadventure\obj\Debug\net5.0\asciiadventure.genruntimeconfig.cache
