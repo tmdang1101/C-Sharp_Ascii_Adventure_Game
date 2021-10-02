@@ -7,7 +7,7 @@ Walking into a teleport will transport you to the other one in the same directio
 3. Weapon and Mine:
 I counted these two objects as one feature since they work together. After the Player picks up the Weapon, they have three Mines in their inventory to place wherever they want on the map to kill the mob. Mines can also be automatically placed on the map when the game starts. Player can also be set up to have unlimited Mines.
 4. Treasures:
-I upgraded Treasure so that Player can store the number of treasures in their inventory.
+I upgraded Treasure so that Player can store the number of treasures in their inventory to win the game.
 
 
 Other than those main features, I also added some small, little nuances.
