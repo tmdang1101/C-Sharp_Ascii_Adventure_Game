@@ -18,7 +18,7 @@ namespace asciiadventure {
         }
 
         private static string Menu() {
-            return "WASD to move\nIJKL to attack/interact\nEnter command: ";
+            return "WASD to move\nIJKL to jump\nPick up W for a Weapon\nEnter command: ";
         }
 
         private static void PrintScreen(Screen screen, string message, string menu) {
@@ -77,7 +77,7 @@ namespace asciiadventure {
                 if (Eq(input, 'q')) {
                     break;
                 } else if (Eq(input, 'm') && (player.NumMine > 0)) { // if player has weapon, you can provide direction to place mines
-                    message += "PLAYER PLACING MINE\n";
+                    message += "PLAYER PLACING MINE\nPress WASD for direction";
                     PrintScreen(screen, message, Menu());
                     char input2 = Console.ReadKey(true).KeyChar;
                     if (Eq(input2, 'w')) {
@@ -95,25 +95,25 @@ namespace asciiadventure {
                 } else if (Eq(input, 'w')) {  // sorry for all the lines of code, I couldn't find a more efficient way to write this
                     if(player.Row==teleporter1.Row+1 && player.Col==teleporter1.Col) player.Teleport(teleporter2.Row-1,teleporter2.Col);
                     else if(player.Row==teleporter2.Row+1 && player.Col==teleporter2.Col) player.Teleport(teleporter1.Row-1,teleporter1.Col);
-                    else if(screen[player.Row-1, player.Col] is Weapon) {player.Move(-1, 0); player.NumMine = 3; message += "You got 3 Mines!\nPress 'm' to place a Mine";}
+                    else if(screen[player.Row-1, player.Col] is Weapon) {player.Move(-1, 0); player.NumMine = 3; message += "You got 3 Mines!\nPress 'M' to place a Mine";}
                     else if(screen[player.Row-1, player.Col] is Treasure) {player.Move(-1, 0); message += "You got a Treasure!\n"; player.NumTreasures++; if(player.NumTreasures==3) {message += "You got all the Treasures! Game Over"; gameOver = true;}}
                     else player.Move(-1, 0);
                 } else if (Eq(input, 's')) {  // these lines allow player to do actions like teleporting, picking up weapons and treasures
                     if(player.Row==teleporter1.Row-1 && player.Col==teleporter1.Col) player.Teleport(teleporter2.Row+1,teleporter2.Col);
                     else if(player.Row==teleporter2.Row-1 && player.Col==teleporter2.Col) player.Teleport(teleporter1.Row+1,teleporter1.Col);
-                    else if(screen[player.Row+1, player.Col] is Weapon) {player.Move(1, 0); player.NumMine = 3; message += "You got 3 Mines!\nPress 'm' to place a Mine";}
+                    else if(screen[player.Row+1, player.Col] is Weapon) {player.Move(1, 0); player.NumMine = 3; message += "You got 3 Mines!\nPress 'M' to place a Mine";}
                     else if(screen[player.Row+1, player.Col] is Treasure) {player.Move(1, 0); message += "You got a Treasure!\n"; player.NumTreasures++; if(player.NumTreasures==3) {message += "You got all the Treasures! Game Over"; gameOver = true;}}
                     else player.Move(1, 0);
                 } else if (Eq(input, 'a')) {
                     if(player.Row==teleporter1.Row && player.Col-1==teleporter1.Col) player.Teleport(teleporter2.Row,teleporter2.Col-1);
                     else if(player.Row==teleporter2.Row && player.Col-1==teleporter2.Col) player.Teleport(teleporter1.Row,teleporter1.Col-1);
-                    else if(screen[player.Row, player.Col-1] is Weapon) {player.Move(0, -1); player.NumMine = 3; message += "You got 3 Mines!\nPress 'm' to place a Mine";}
+                    else if(screen[player.Row, player.Col-1] is Weapon) {player.Move(0, -1); player.NumMine = 3; message += "You got 3 Mines!\nPress 'M' to place a Mine";}
                     else if(screen[player.Row, player.Col-1] is Treasure) {player.Move(0, -1); message += "You got a Treasure!\n"; player.NumTreasures++; if(player.NumTreasures==3) {message += "You got all the Treasures! Game Over"; gameOver = true;}}
                     else player.Move(0, -1);
                 } else if (Eq(input, 'd')) {
                     if(player.Row==teleporter1.Row && player.Col+1==teleporter1.Col) player.Teleport(teleporter2.Row,teleporter2.Col+1);
                     else if(player.Row==teleporter2.Row && player.Col+1==teleporter2.Col) player.Teleport(teleporter1.Row,teleporter1.Col+1);
-                    else if(screen[player.Row, player.Col+1] is Weapon) {player.Move(0, 1); player.NumMine = 3; message += "You got 3 Mines!\nPress 'm' to place a Mine";}
+                    else if(screen[player.Row, player.Col+1] is Weapon) {player.Move(0, 1); player.NumMine = 3; message += "You got 3 Mines!\nPress 'M' to place a Mine";}
                     else if(screen[player.Row, player.Col+1] is Treasure) {player.Move(0, 1); message += "You got a Treasure!\n"; player.NumTreasures++; if(player.NumTreasures==3) {message += "You got all the Treasures! Game Over"; gameOver = true;}}
                     else player.Move(0, 1);
                 } else if (Eq(input, 'i')) { // jumping 2 steps

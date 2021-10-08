@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuand\\OneDrive\\Documents\\asciiadventure\\asciiadventure.csproj": {}
+    "C:\\Users\\tuand\\OneDrive\\Documents\\GitHub\\C-Sharp_Ascii_Adventure_Game\\asciiadventure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuand\\OneDrive\\Documents\\asciiadventure\\asciiadventure.csproj": {
+    "C:\\Users\\tuand\\OneDrive\\Documents\\GitHub\\C-Sharp_Ascii_Adventure_Game\\asciiadventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuand\\OneDrive\\Documents\\asciiadventure\\asciiadventure.csproj",
+        "projectUniqueName": "C:\\Users\\tuand\\OneDrive\\Documents\\GitHub\\C-Sharp_Ascii_Adventure_Game\\asciiadventure.csproj",
         "projectName": "asciiadventure",
-        "projectPath": "C:\\Users\\tuand\\OneDrive\\Documents\\asciiadventure\\asciiadventure.csproj",
+        "projectPath": "C:\\Users\\tuand\\OneDrive\\Documents\\GitHub\\C-Sharp_Ascii_Adventure_Game\\asciiadventure.csproj",
         "packagesPath": "C:\\Users\\tuand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuand\\OneDrive\\Documents\\asciiadventure\\obj\\",
+        "outputPath": "C:\\Users\\tuand\\OneDrive\\Documents\\GitHub\\C-Sharp_Ascii_Adventure_Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tuand\\AppData\\Roaming\\NuGet\\NuGet.Config"
